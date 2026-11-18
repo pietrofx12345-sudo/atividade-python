@@ -1,0 +1,21 @@
+print("---Registro de software' na blockchain---")
+app = input("App: ")
+dev = input("Dev: ")
+email = input("E-mail: ")
+versao = input("Versão: ")
+hash_codigo = input("Hash: ")
+token = input("Token: ")
+contrato = input("Contrato: ")
+rede = input("Rede: ")
+bloco = input("Bloco: ")
+minerador = input("Minerador: ")
+taxa = input("Taxa: ")
+chave = input("Chave: ")
+wallet = input("Wallet: ")
+servidor = input("Servidor: ")
+protocolo = input("Protocolo: ")
+
+if app.isalpha() and dev.isalpha() and contrato.isdigit() and len(contrato) == 5 and bloco.isdigit() and rede.upper() == "ETHEREUM" and token != "LIXO" and len(hash_codigo) == 10:
+    print("Registro válido")
+else:
+    print("Registro inválido")

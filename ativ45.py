@@ -1,0 +1,21 @@
+print("----Prontuario medico de cirurgia robotica----")
+paciente = input("Nome do paciente: ").strip()
+cpf = input("CPF: ").strip()
+idade = input("Idade: ").strip()
+peso = input("Peso: ").strip()
+altura = input("Altura: ").strip()
+medico = input("Nome do medico: ").strip()
+crm = input("CRM: ").strip()
+robo = input("Modelo do robo cirurgico: ").strip()
+sala = input("Numero da sala de cirurgia: ").strip()
+hospital = input("Nome do hospital: ").strip()
+sangue = input("Tipo sanguineo: ").strip().upper()
+alergia = input("Possui alergia? ").strip().upper()
+anestesia = input("Tipo de anestesia: ").strip().upper()
+batimentos = input("Batimentos cardíacos: ").strip()
+oxigenio = input("Nível de oxigênio: ").strip()
+
+if paciente.isalpha() and medico.isalpha() and cpf.isdigit() and len(cpf) == 11 and crm.isdigit() and len(crm) == 6 and robo == "DA_VINCI" and hospital != "TESTE" and len(sangue) in [2, 3] and batimentos.isdigit() and oxigenio.isdigit():
+    print("Prontuário válido")
+else:
+    print("Prontuário inválido")

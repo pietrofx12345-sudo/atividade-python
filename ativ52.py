@@ -1,0 +1,20 @@
+print("-------------Registro de Software na Nuvem-------------")
+app = input("Digite o nome do aplicativo:").strip()
+versao = input("Digite a versão do software:").strip()
+linguagem = input("Digite a linguagem de programação utilizada:").strip()
+Servidor = input("Digite o nome do servidor onde o software está hospedado:").strip()
+IP = input("Digite o endereço IP do servidor:").strip()
+Porta = input("Digite a porta(num) de acesso ao software:").strip()
+deselvovedor = input("Digite o nome do desenvolvedor responsável:").strip()
+CPF = input("Digite o CPF (somente números):").strip()
+email = input("Digite o E-mail:").strip()
+empresa = input("Digite o nome da empresa:").strip()
+CPNJ = input("Digite o CNPJ (somente números):").strip()
+pais = input("Digite o país:").strip()
+licença = input("Digite o tipo de licença do software:").strip()
+data = input("Digite a data de lançamento (DD/MM/AAAA):").strip()
+status = input("Digite o status do software (Digite ATIVO para confirmar):").strip().upper()
+if linguagem.isalpha() and pais.isalpha() and Porta.isdigit() and\
+    CPF.isdigit() and CPNJ.isdigit() and licença.isdigit() and data.count("/") == 2 and\
+    email.count("@") == 1 and email.endswith(".com") and status == "ATIVO":
+        print(f"Sucesso: O software {app} versão {versao} foi registrado com sucesso!")

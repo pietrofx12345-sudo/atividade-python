@@ -1,0 +1,20 @@
+print("---Cadastro de um agente da interpol---")
+agente = input("Agente: ")
+codinome = input("Codinome: ")
+pais = input("País: ")
+id_agente = input("ID: ")
+nivel = input("Nível: ")
+cargo = input("Cargo: ")
+especialidade = input("Especialidade: ")
+senha = input("Senha: ")
+pin = input("PIN: ")
+unidade = input("Unidade Superior: ")
+missao = input("Missão: ")
+arma = input("Arma: ")
+veiculo = input("Veículo: ")
+status = input("Status: ")
+
+if agente.isalpha() and codinome.isalpha() and id_agente.isdigit() and len(id_agente) == 7 and pin.isdigit() and len(pin) == 4 and unidade.upper() == "INTERPOL" and status != "INATIVO" and nivel == "TOP_SECRET":
+    print("Cadastro válido")
+else:
+    print("Cadastro inválido")
